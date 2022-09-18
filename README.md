@@ -182,7 +182,7 @@ certbot --nginx
     y, y, y
     1 2
 ```
-Для конфигурировани nginx (выше есть, но на всякий =)) ):
+Для конфигурирования nginx (выше есть, но на всякий =)) ):
 ```
 auto/configure `nginx -V 2>&1 | sed "s/ \-\-/ \\\ \n\t--/g" | grep "\-\-" | grep -ve opt= -e param= -e build=` \
     --prefix=/etc/nginx \
