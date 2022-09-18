@@ -1,4 +1,4 @@
-# Установка и настройка nginx + quic + brotli (openssl+quic + boringssl)
+# Установка и настройка nginx + quic + brotli (openssl+quic + boringssl) [http3]
 
 ### [Моя видео инструкция](https://www.youtube.com/watch?v=K_p2nJbQVdc "Тестирование TLS соединения")
 
