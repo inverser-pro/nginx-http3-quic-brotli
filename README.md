@@ -1,10 +1,15 @@
 Это всё пригодилось для результата...
 
 https://risaksson.com/post/9/2022-05-10/HTTP3-with-NGINX
+
 https://www.linuxcapable.com/how-to-install-latest-nginx-mainline-or-stable-on-debian-11/
+
 https://github.com/VKCOM/nginx-quic
+
 https://www.nginx.com/blog/our-roadmap-quic-http-3-support-nginx/
+
 https://github.com/quictls/openssl
+
 https://github.com/google/ngx_brotli
 
 Для конфигурации brotli
@@ -12,13 +17,17 @@ https://github.com/pepelsbey/playground/blob/main/56/1-server.md
 
 nginx настройка
 https://www.vultr.com/docs/nginx-redirects-for-non-www-sub-domains-to-www/
+
 https://driesdeboosere.dev/blog/how-to-redirect-www-to-non-www-with-nginx/
 
 Почитать:
 
 https://github.com/ngtcp2/ngtcp2
+
 https://www.grottedubarbu.fr/nginx-quic-http3/
+
 https://cabulous.medium.com/http-3-quic-and-how-it-works-c5ffdb6735b4
+
 https://www.smashingmagazine.com/2021/08/http3-core-concepts-part1/
 
 boringssl установка (отдельно)
