@@ -122,6 +122,11 @@ make install_sw
         --with-cc-opt="-I/src/boringssl/include" --with-ld-opt="-L/src/boringssl/build/ssl -L/src/boringssl/build/crypto" && \
     make && make install
 ```
+
+Проверяет Brotli
+
+```curl -H 'Accept-Encoding: br' -I http://localhost```
+
 https://github.com/google/ngx_brotli
 
 https://ruvds.com/ru/helpcenter/ubuntu-debian-packages/
