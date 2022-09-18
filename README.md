@@ -294,3 +294,4 @@ apt-get install -t sid sshguard
 [Добавьте безопасные заголовки в nginx.conf](https://webdock.io/en/docs/how-guides/security-guides/how-to-configure-security-headers-in-nginx-and-apache)
 [Тоже по заголовкам интересно](https://www.getpagespeed.com/server-setup/nginx-security-headers-the-right-way)
 [Защитите свой домен (SPF)](https://dmarcian.com/domain-checker/) > [инструкция](https://www.cloudflare.com/learning/dns/dns-records/dns-spf-record/)
+[Интересно по безопасности](https://owasp.org/www-community/attacks/csrf)
