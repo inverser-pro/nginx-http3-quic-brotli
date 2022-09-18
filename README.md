@@ -286,4 +286,4 @@ Pin-Priority: -100' > /etc/apt/preferences.d/sid-100
 apt-get update
 apt-get install -t sid sshguard
 ```
-[Защитите свой домен](https://dmarcian.com/domain-checker/) 
+[Защитите свой домен (SPF)](https://dmarcian.com/domain-checker/) > [инструкция](https://www.cloudflare.com/learning/dns/dns-records/dns-spf-record/)
