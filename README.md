@@ -126,7 +126,7 @@ make install_sw
     make && make install
 ```
 
-Проверяет Brotli
+Проверяем Brotli
 
 ```curl -H 'Accept-Encoding: br' -I http://localhost```
 
