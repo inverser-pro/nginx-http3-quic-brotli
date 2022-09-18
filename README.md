@@ -5,6 +5,11 @@
 ###  Результат
 [![](https://raw.githubusercontent.com/inverser-pro/nginx-http3-quic-brotli/main/images/2022-09-18_02-48.png)](https://raw.githubusercontent.com/inverser-pro/nginx-http3-quic-brotli/main/images/2022-09-18_02-48.png)
 
+**Система** ```lsb_release -da``` :
+- Debian 11
+**Ядро** ```uname -srm```:
+- Linux 5.10.0-18-amd64 x86_64
+
 Это всё пригодилось для результата...
 
 https://github.com/VKCOM/nginx-quic
