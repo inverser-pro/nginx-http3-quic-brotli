@@ -8,6 +8,8 @@
 **Система** ```lsb_release -da``` :
 - Debian 11
 
+[Здесь написано отлично, как можно обновить сиитему и все пакеты](https://linuxize.com/post/how-to-upgrade-debian-10-to-debian-11/)
+
 **Ядро** ```uname -srm```:
 - Linux 5.10.0-18-amd64 x86_64
 
