@@ -58,7 +58,9 @@ https://gist.github.com/neilstuartcraig/4b8f06a4d4374c379bc0f44923a11fa4
 Вот в ней (/root) выполняем следующие команды...
 
 ### Модуль nginx ngx_brotli
+```
 git clone https://github.com/google/ngx_brotli.git
+```
 *его просто необходимо скопировать*
 
 ## Скачиваем и устанавливаем openssl+quic
