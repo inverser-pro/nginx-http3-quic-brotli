@@ -5,6 +5,8 @@
 
 Это всё пригодилось для результата...
 
+https://github.com/VKCOM/nginx-quic
+
 https://risaksson.com/post/9/2022-05-10/HTTP3-with-NGINX
 
 https://www.linuxcapable.com/how-to-install-latest-nginx-mainline-or-stable-on-debian-11/
