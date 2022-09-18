@@ -1,3 +1,5 @@
+# Установка и настройка nginx + quic + brotli (openssl+quic + boringssl)
+
 Это всё пригодилось для результата...
 
 https://risaksson.com/post/9/2022-05-10/HTTP3-with-NGINX
