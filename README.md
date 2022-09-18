@@ -36,17 +36,18 @@ https://gist.github.com/neilstuartcraig/4b8f06a4d4374c379bc0f44923a11fa4
 ----------
 
 Логика действий:
-Скачиваем и устанавливаем openssl+quic текущей версии.
-Скачиваем модуль nginx + brotli
-Скачиваем исходники nginx с флагом -b quic
-Скачиваем boringssl — это как бы для quic
-Устанавливаем все необходимые зависимости для установки boringssl, nginx, openssl
-Устанавливаем сначала boringssl
-Затем устаналиваем nginx с конфигурацией, как у меня, с указанием путей к исходникам openssl и модулю ngx_brotli
 
-Устанавливаем certbot
-Настраиваем конфигурацию сервера, тестируем её, запускаем сервер
-Проверяем http2, http3, brotli
+- Скачиваем и устанавливаем openssl+quic текущей версии.
+- Скачиваем модуль nginx + brotli
+- Скачиваем исходники nginx с флагом -b quic
+- Скачиваем boringssl — это как бы для quic
+- Устанавливаем все необходимые зависимости для установки boringssl, nginx, openssl
+- Устанавливаем сначала boringssl
+- Затем устаналиваем nginx с конфигурацией, как у меня, с указанием путей к исходникам openssl и модулю ngx_brotli
+
+- Устанавливаем certbot
+- Настраиваем конфигурацию сервера, тестируем её, запускаем сервер
+- Проверяем http2, http3, brotli
 
 Можно также поставить sshguard для улучшения безопасности сервера
 
@@ -111,7 +112,9 @@ make install_sw
     make && make install
 ```
 https://github.com/google/ngx_brotli
+
 https://ruvds.com/ru/helpcenter/ubuntu-debian-packages/
+
 https://linuxize.com/post/how-to-upgrade-debian-10-to-debian-11/
 
 На всякий
@@ -123,16 +126,21 @@ apt install mercurial libpcre3 libpcre3-dev gcc make autoconf zlib1g zlib1g-dev 
 cd ../ngx_brotli && git submodule update --init && cd /root/nginx-quic
 ```
 ## Видосики
+
 Николай (Метод Лаб) — полная настройка http3
+
 https://www.youtube.com/watch?v=XwdCL_YjJMo&t=886s
 
 Вадим Макеев — полная настройка https http2 brotli + безопасного сервера
+
 https://www.youtube.com/watch?v=XDWWxA6g1eA
 
 Anton Putra установка certbot (НАДО)
+
 https://www.youtube.com/watch?v=R5d-hN9UtpU
 
 ## Установка certbot
+
 Выполняем каждую команду отдельно
 ```
 apt update
@@ -174,8 +182,10 @@ auto/configure `nginx -V 2>&1 | sed "s/ \-\-/ \\\ \n\t--/g" | grep "\-\-" | grep
 ### Генерируем dhparam
 ```openssl dhparam -out /etc/nginx/crt/dhparam.pem 4096```
 
-## Такая ошибка возникала из-за малого объема оперативы:
+## Такая ошибка возникала из-за малого объема оперативы, при установке boringssl:
+
 (bugs.chromium.org/p/boringssl/issues/detail?id=520)
+
 ```
 [ 86%] Linking CXX static library libssl.a
 [ 86%] Built target ssl
@@ -194,7 +204,9 @@ Reading package lists... Done
 Building dependency tree
 Reading state information... Done
 ```
+
 На вский:
+
 ```
 apt update && apt upgrade -y
 apt install wget gnupg2 ca-certificates lsb-release debian-keyring software-properties-common -y
@@ -214,22 +226,25 @@ echo deb [arch=amd64,arm64 signed-by=/usr/share/keyrings/nginx-archive-keyring.g
 ```
 echo -e "Package: *\nPin: origin nginx.org\nPin: release o=nginx\nPin-Priority: 900\n" | tee /etc/apt/preferences.d/99nginx
 ```
-
+```
 lfache@Midgar:~/nginx-quic$ cd ..
 lfache@Midgar:~$ git clone --depth 1 -b OpenSSL_1_1_1g-quic-v1-compat https://github.com/tatsuhiro-t/openssl
 lfache@Midgar:~$ cd openssl
 lfache@Midgar:~/openssl$ ./config enable-tls1_3 --openssldir=/etc/ssl
 lfache@Midgar:~/openssl$ make -j$(nproc)
 lfache@Midgar:~/openssl$ sudo make install_sw
+```
+Была такая ошибка. Пришлось переустановить opessl на openssl+quic (v3.0.5)
+```nginx: /lib/x86_64-linux-gnu/libssl.so.1.1: version `OPENSSL_1_1_1d' not found (required by nginx)```
 
-
-nginx: /lib/x86_64-linux-gnu/libssl.so.1.1: version `OPENSSL_1_1_1d' not found (required by nginx)
 Чтобы сохранить список установленных программ:
 ```
 dpkg --get-selections | grep -v deinstall > mylist.txt
 ```
 SSHGuard
+
 https://www.youtube.com/watch?v=-GTkM6XFEBw
+
 Команды из видео по установке SSHGuard
 ```
 echo 'deb http://deb.debian.org/debian sid main' > \
