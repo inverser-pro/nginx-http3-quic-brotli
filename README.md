@@ -232,7 +232,7 @@ Building dependency tree
 Reading state information... Done
 ```
 
-На вский:
+На всякий:
 
 ```
 apt update && apt upgrade -y
