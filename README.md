@@ -156,7 +156,7 @@ cd ../ngx_brotli && git submodule update --init && cd /root/nginx-quic
 
 Николай (Метод Лаб) — полная настройка http3
 
-https://www.youtube.com/watch?v=XwdCL_YjJMo&t=886s
+https://www.youtube.com/watch?v=XwdCL_YjJMo
 
 Вадим Макеев — полная настройка https http2 brotli + безопасного сервера
 
