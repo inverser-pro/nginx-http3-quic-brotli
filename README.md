@@ -7,6 +7,7 @@
 
 **Система** ```lsb_release -da``` :
 - Debian 11
+
 **Ядро** ```uname -srm```:
 - Linux 5.10.0-18-amd64 x86_64
 
