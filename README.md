@@ -268,7 +268,11 @@ lfache@Midgar:~/openssl$ sudo make install_sw
 ```
 dpkg --get-selections | grep -v deinstall > mylist.txt
 ```
-SSHGuard
+-----
+
+### доп. инфо
+
+#### SSHGuard
 
 https://www.youtube.com/watch?v=-GTkM6XFEBw
 
@@ -286,4 +290,6 @@ Pin-Priority: -100' > /etc/apt/preferences.d/sid-100
 apt-get update
 apt-get install -t sid sshguard
 ```
+#### Полезное
+[Добавьте безопасные заголовки в nginx.conf](https://webdock.io/en/docs/how-guides/security-guides/how-to-configure-security-headers-in-nginx-and-apache)
 [Защитите свой домен (SPF)](https://dmarcian.com/domain-checker/) > [инструкция](https://www.cloudflare.com/learning/dns/dns-records/dns-spf-record/)
