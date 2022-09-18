@@ -1,5 +1,8 @@
 # Установка и настройка nginx + quic + brotli (openssl+quic + boringssl)
 
+###  Результат
+[![](https://raw.githubusercontent.com/inverser-pro/nginx-http3-quic-brotli/main/images/2022-09-18_02-48.png)](https://raw.githubusercontent.com/inverser-pro/nginx-http3-quic-brotli/main/images/2022-09-18_02-48.png)
+
 Это всё пригодилось для результата...
 
 https://risaksson.com/post/9/2022-05-10/HTTP3-with-NGINX
