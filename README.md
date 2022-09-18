@@ -5,6 +5,10 @@
 ###  Результат
 [![](https://raw.githubusercontent.com/inverser-pro/nginx-http3-quic-brotli/main/images/2022-09-18_02-48.png)](https://raw.githubusercontent.com/inverser-pro/nginx-http3-quic-brotli/main/images/2022-09-18_02-48.png)
 
+**Внимание, друзья!**
+
+В папке ```nginx_conf``` лежат два файла настроек для nginx! Проведите изменения в них таким образом: укажите, где находится Ваш root (папка с сайтом > nginx.conf), укажите ВАШЕ название домена; и также в файле ```http3.conf``` поменяйте пути к сертификату TLS (Let's encrypt)
+
 **Система** ```lsb_release -da``` :
 - Debian 11
 
