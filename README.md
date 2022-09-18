@@ -1,5 +1,7 @@
 # Установка и настройка nginx + quic + brotli (openssl+quic + boringssl)
 
+### [Моя видео инструкция](https://www.youtube.com/watch?v=K_p2nJbQVdc "Тестирование TLS соединения")
+
 ###  Результат
 [![](https://raw.githubusercontent.com/inverser-pro/nginx-http3-quic-brotli/main/images/2022-09-18_02-48.png)](https://raw.githubusercontent.com/inverser-pro/nginx-http3-quic-brotli/main/images/2022-09-18_02-48.png)
 
