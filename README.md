@@ -85,7 +85,7 @@ cd openssl && \
 make -j$(nproc)
 make install_sw
 ```
-Выполняем для установки boringssl
+#### Выполняем для установки boringssl
 ```
  apt-get update && \
     apt-get install -y git gcc make g++ cmake perl libunwind-dev golang && \
@@ -95,6 +95,7 @@ make install_sw
     cmake .. && \
     make
 ```
+#### Установим сам nginx + модуль brotli + openssl+quic
 ```
  apt-get install -y mercurial libperl-dev libpcre3-dev zlib1g-dev libxslt1-dev libgd-ocaml-dev libgeoip-dev && \
     hg clone -b quic https://hg.nginx.org/nginx-quic   && \
