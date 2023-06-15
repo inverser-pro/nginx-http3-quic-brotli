@@ -137,6 +137,7 @@ make install_sw
         --with-cc-opt="-I/src/boringssl/include" --with-ld-opt="-L/src/boringssl/build/ssl -L/src/boringssl/build/crypto" && \
     make && make install
 ```
+Говорят, что теперь можно убарть флаг `--with-stream_quic_module` из `--with-http_v3_module --with-stream_quic_module`
 
 Проверяем Brotli
 
